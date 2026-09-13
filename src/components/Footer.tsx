@@ -4,13 +4,13 @@ export default function Footer() {
     return (
         <footer className="px-5 py-12">
 
-            <div className="mx-auto max-w-6xl">
+            <div className="container mx-auto px-10">
 
-                <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
+                <div className="grid grid-cols-1 gap-10 md:grid-cols-[1fr_2fr]">
 
                     <div>
 
-                        <div className="hidden md:block cursor-pointer transition">
+                        <div className="hidden cursor-pointer transition md:block">
                             <img
                                 src={logo}
                                 alt="Dev Stack Logo"
@@ -18,11 +18,12 @@ export default function Footer() {
                             />
                         </div>
 
-                        <p className="mt-4 text-xs leading-5 text-gray-500">
+                        <p className="mt-4 text-xs  text-gray-500">
                             Curated tools, technologies, and resources for developers building
+                            modern software.
                         </p>
 
-                        <div className="mt-5 flex gap-5 text-xs text-gray-600 font-semibold">
+                        <div className="mt-5 flex gap-5 text-xs font-semibold text-gray-600">
                             <a href="#">GitHub</a>
                             <a href="#">Twitter</a>
                             <a href="#">LinkedIn</a>
@@ -30,39 +31,43 @@ export default function Footer() {
 
                     </div>
 
-                    <div>
-                        <h3 className="text-xs font-bold  ">
-                            PRODUCT
-                        </h3>
+                    <div className="grid grid-cols-1 gap-10 sm:grid-cols-3">
 
-                        <div className="mt-4 flex flex-col gap-3 text-xs text-gray-500">
-                            <a href="#">Home</a>
-                            <a href="#">Technologies</a>
-                            <a href="#">Projects</a>
+                        <div>
+                            <h3 className="text-xs font-bold">
+                                PRODUCT
+                            </h3>
+
+                            <div className="mt-4 flex flex-col gap-3 text-xs text-gray-500">
+                                <a href="#">Home</a>
+                                <a href="#">Technologies</a>
+                                <a href="#">Projects</a>
+                            </div>
                         </div>
-                    </div>
 
-                    <div>
-                        <h3 className="text-xs font-bold  ">
-                            COMPANY
-                        </h3>
+                        <div>
+                            <h3 className="text-xs font-bold">
+                                COMPANY
+                            </h3>
 
-                        <div className="mt-4 flex flex-col gap-3 text-xs text-gray-500">
-                            <a href="#">About</a>
-                            <a href="#">Contact</a>
-                            <a href="#">Careers</a>
+                            <div className="mt-4 flex flex-col gap-3 text-xs text-gray-500">
+                                <a href="#">About</a>
+                                <a href="#">Contact</a>
+                                <a href="#">Careers</a>
+                            </div>
                         </div>
-                    </div>
 
-                    <div>
-                        <h3 className="text-xs font-bold">
-                            LEGAL
-                        </h3>
+                        <div>
+                            <h3 className="text-xs font-bold">
+                                LEGAL
+                            </h3>
 
-                        <div className="mt-4 flex flex-col gap-3 text-xs text-gray-500">
-                            <a href="#">Privacy Policy</a>
-                            <a href="#">Terms of Service</a>
+                            <div className="mt-4 flex flex-col gap-3 text-xs text-gray-500">
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">Terms of Service</a>
+                            </div>
                         </div>
+
                     </div>
 
                 </div>

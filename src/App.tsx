@@ -53,7 +53,7 @@ function App() {
 
       <main className="bg-gray-50">
 
-        <div className="mx-auto max-w-7xl px-5 py-10">
+        <div className="mx-auto container px-5 py-10">
           <h1 className="text-4xl font-bold leading-tight text-slate-800">
             Explorer the <span className="brand-gradient-text bg-clip-text text-transparent">Technologies</span>
           </h1>

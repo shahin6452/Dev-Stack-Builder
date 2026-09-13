@@ -3,7 +3,7 @@ import bannerImage from "../assets/banner-stack.png";
 export default function Hero() {
     return (
         <section className="bg-[#f8f8fa]">
-            <div className="mx-auto flex min-h-87.5 max-w-7xl items-center justify-between px-16 py-12">
+            <div className="mx-auto flex min-h-87.5 container items-center justify-between px-5 py-12">
 
                 {/* Left */}
                 <div className="max-w-120">

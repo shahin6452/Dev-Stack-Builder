@@ -4,7 +4,7 @@ import { HiOutlineMenu } from "react-icons/hi";
 export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 border-b border-gray-100 bg-white">
-      <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 sm:px-6">
+      <div className="mx-auto  flex h-14 container items-center justify-between px-5 sm:px-6">
 
         <button className="text-xl md:hidden cursor-pointer transition">
           <HiOutlineMenu />
@@ -26,7 +26,7 @@ export default function Navbar() {
           />
         </div>
 
-        <div className="hidden items-center gap-7 text-[10px] text-gray-500 md:flex">
+        <div className="hidden items-center gap-7 text-[13px] text-gray-500 md:flex">
           <a href="#" className="text-pink-600 ">Home</a>
           <a href="#">Technologies</a>
           <a href="#">Projects</a>
