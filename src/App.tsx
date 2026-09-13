@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar";
 import Technologies from "./components/Technologies";
 import YourStack from "./components/YourStack";
 import type { TechnologyType } from "./Type";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const dataPromise = async () => {
   const res = await fetch("/data.json");
@@ -21,11 +23,12 @@ function App() {
     );
 
     if (alreadyAdded) {
-      alert("This technology is already added!");
+      toast.warning("This technology is already added!");
       return;
     }
 
     setSelectedStack([...selectedStack, technology]);
+    toast.success(`${technology.name} added to stack!`);
   };
 
   const handleRemove = (id: string) => {
@@ -34,10 +37,12 @@ function App() {
     );
 
     setSelectedStack(remainingStack);
+    toast.info("Technology removed!");
   };
 
   const handleRemoveAll = () => {
     setSelectedStack([]);
+    toast.error("All technologies removed!");
   };
 
   return (
@@ -66,6 +71,7 @@ function App() {
           </div>
         </div>
       </main>
+      <ToastContainer />
     </>
   );
 }
