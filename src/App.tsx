@@ -7,7 +7,7 @@ import YourStack from "./components/YourStack";
 import type { TechnologyType } from "./Type";
 
 const dataPromise = async () => {
-  const res = await fetch("/technologies.json");
+  const res = await fetch("/data.json");
   const data = await res.json();
   return data;
 };
