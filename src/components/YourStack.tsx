@@ -32,7 +32,7 @@ export default function YourStack({
 
             {selectedStack.length === 0 ? (
 
-                <div className="mt-3 rounded-xl border border-dashed border-gray-300 py-5 text-center text-sm text-gray-400">
+                <div className="mt-3 rounded-xl border border-dashed border-gray-300 py-4 text-center text-sm text-gray-500">
                     Your stack is empty.
                 </div>
 

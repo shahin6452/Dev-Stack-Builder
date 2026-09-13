@@ -27,7 +27,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden items-center gap-7 text-[13px] text-gray-500 md:flex">
-          <a href="#" className="text-pink-600 ">Home</a>
+          <a href="#" className="brand-gradient-text ">Home</a>
           <a href="#">Technologies</a>
           <a href="#">Projects</a>
           <a href="#">About</a>
@@ -35,13 +35,22 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-2 text-[10px] sm:gap-4">
-          <button className="text-gray-500 cursor-pointer transition">
+          {/* <button className="text-gray-500 cursor-pointer transition">
             Sign In
           </button>
 
           <button className="rounded-full brand-gradient px-3 py-2 font-medium text-white shadow-sm sm:px-5 cursor-pointer transition">
             Sign Up
+          </button> */}
+
+          <button className="btn btn-ghost btn-sm text-gray-500 cursor-pointer transition">
+            Sign In
           </button>
+
+          <button className="btn btn-sm rounded-full border-0 brand-gradient px-3 font-medium text-white shadow-sm sm:px-5 cursor-pointer transition">
+            Sign Up
+          </button>
+
         </div>
 
       </div>

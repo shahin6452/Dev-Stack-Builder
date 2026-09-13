@@ -3,23 +3,23 @@ import bannerImage from "../assets/banner-stack.png";
 export default function Hero() {
     return (
         <section className="bg-[#f8f8fa]">
-            <div className="mx-auto flex min-h-87.5 container items-center justify-between px-5 py-12">
+            <div className="mx-auto flex min-h-87.5 container items-center justify-between px-5 py-12 ">
 
                 {/* Left */}
                 <div className="max-w-120">
 
 
-                    <h1 className="text-4xl font-bold leading-tight text-slate-800">
+                    <h1 className="text-5xl font-bold leading-tight">
                         Build Your Ideal
                         <br />
 
-                        <span className="brand-gradient-text bg-clip-text text-transparent">
+                        <span className="brand-gradient-text">
                             Development Stack
                         </span>
                     </h1>
 
 
-                    <p className="mt-4 max-w-105 text-sm leading-6 text-slate-500">
+                    <p className="mt-4 max-w-105 text-sm leading-6 text-[#475569]">
                         Explore frontend, backend, database, and tooling options,
                         compare them side by side, and put together the stack that
                         fits your next project.
@@ -45,7 +45,7 @@ export default function Hero() {
                     <img
                         src={bannerImage}
                         alt="Development Stack"
-                        className="w-[320px]"
+                        className="w-100"
                     />
                 </div>
 

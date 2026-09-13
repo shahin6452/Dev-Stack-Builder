@@ -10,7 +10,7 @@ export default function Footer() {
 
                     <div>
 
-                        <div className="hidden cursor-pointer transition md:block">
+                        <div className="cursor-pointer transition">
                             <img
                                 src={logo}
                                 alt="Dev Stack Logo"
