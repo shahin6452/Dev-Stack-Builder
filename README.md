@@ -42,7 +42,7 @@ A unique `key` helps React identify each item in a list. This helps React update
 
 ## 6. What is conditional rendering? Show one place you used it.
 
-Conditional rendering means showing different content based on a condition. In this project, I used it in the `YourStack` component to show an empty message when no technology is selected.
+useEffect is used to handle side effects such as data fetching. I did not use useEffect in this project. Instead, I used Suspense and the use() hook to load the JSON data.
 
 ```tsx
 {selectedStack.length === 0 ? (

@@ -9,11 +9,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Footer from "./components/Footer";
 
-const dataPromise = async () => {
-  const res = await fetch("/data.json");
-  const data = await res.json();
-  return data;
-};
+const dataPromise = fetch("/data.json").then((res) => res.json());
 
 function App() {
   const [selectedStack, setSelectedStack] = useState<TechnologyType[]>([]);
@@ -55,14 +51,14 @@ function App() {
 
         <div className="mx-auto container px-5 py-10">
           <h1 className="text-4xl font-bold leading-tight text-slate-800">
-            Explorer the <span className="brand-gradient-text bg-clip-text text-transparent">Technologies</span>
+            Explore the <span className="brand-gradient-text bg-clip-text text-transparent">Technologies</span>
           </h1>
           <p className="text-[#64748B] mb-8 mt-1">Pick one technology per category to build your ideal stack.</p>
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_300px]">
 
             <Suspense fallback={<p>Loading...</p>}>
               <Technologies
-                dataPromise={dataPromise()}
+                dataPromise={dataPromise}
                 handleAddToStack={handleAddToStack}
                 selectedStack={selectedStack}
               />

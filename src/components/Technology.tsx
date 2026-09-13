@@ -50,7 +50,7 @@ export default function Technology({
                 </span>
 
                 <div className=" ">
-                    <span className="text-sm text-yellow-500">★</span> <span className="text-xs font-semi-bold">{technology.rating}</span>
+                    <span className="text-sm text-yellow-500">★</span> <span className="text-xs font-semibold">{technology.rating}</span>
                 </div>
 
             </div>
