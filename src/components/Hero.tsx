@@ -13,7 +13,7 @@ export default function Hero() {
                         Build Your Ideal
                         <br />
 
-                        <span className="bg-linear-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent">
+                        <span className="brand-gradient-text bg-clip-text text-transparent">
                             Development Stack
                         </span>
                     </h1>
@@ -28,7 +28,7 @@ export default function Hero() {
 
                     <div className="mt-7 flex items-center gap-3">
 
-                        <button className="rounded-md bg-linear-to-r from-orange-500 to-pink-500 px-5 py-3 text-xs font-semibold text-white">
+                        <button className="rounded-md brand-gradient px-5 py-3 text-xs font-semibold text-white">
                             Explore Technologies
                         </button>
 
