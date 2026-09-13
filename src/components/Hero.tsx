@@ -28,11 +28,11 @@ export default function Hero() {
 
                     <div className="mt-7 flex items-center gap-3">
 
-                        <button className="rounded-md brand-gradient px-5 py-3 text-xs font-semibold text-white">
+                        <button className="rounded-md brand-gradient px-5 py-3 text-xs font-semibold text-white cursor-pointer transition">
                             Explore Technologies
                         </button>
 
-                        <button className="rounded-md border border-gray-300 px-7 py-3 text-xs text-gray-600">
+                        <button className="rounded-md border border-gray-300 px-7 py-3 text-xs text-gray-600 cursor-pointer transition">
                             Learn More
                         </button>
 

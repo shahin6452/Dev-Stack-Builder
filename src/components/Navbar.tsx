@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 border-b border-gray-100 bg-white">
       <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 sm:px-6">
 
-        <button className="text-xl md:hidden">
+        <button className="text-xl md:hidden cursor-pointer transition">
           <HiOutlineMenu />
         </button>
 
@@ -17,8 +17,8 @@ export default function Navbar() {
             className="h-7 w-auto"
           />
         </div>
-
-        <div className="hidden md:block">
+        {/* Logo */}
+        <div className="hidden md:block cursor-pointer transition">
           <img
             src={logo}
             alt="Dev Stack Logo"
@@ -27,7 +27,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden items-center gap-7 text-[10px] text-gray-500 md:flex">
-          <a href="#" className="text-pink-600">Home</a>
+          <a href="#" className="text-pink-600 ">Home</a>
           <a href="#">Technologies</a>
           <a href="#">Projects</a>
           <a href="#">About</a>
@@ -35,11 +35,11 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-2 text-[10px] sm:gap-4">
-          <button className="text-gray-500">
+          <button className="text-gray-500 cursor-pointer transition">
             Sign In
           </button>
 
-          <button className="rounded-full bg-pink-600 px-3 py-2 font-medium text-white shadow-sm sm:px-5">
+          <button className="rounded-full brand-gradient px-3 py-2 font-medium text-white shadow-sm sm:px-5 cursor-pointer transition">
             Sign Up
           </button>
         </div>

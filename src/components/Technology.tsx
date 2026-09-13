@@ -35,7 +35,7 @@ export default function Technology({
                 {technology.name}
             </h2>
 
-            <p className="mt-2 text-sm leading-6 text-gray-500">
+            <p className="mt-2 text-sm leading-6 text-gray-500 h-18">
                 {technology.description}
             </p>
 
@@ -49,23 +49,27 @@ export default function Technology({
                     {technology.difficulty}
                 </span>
 
+                <div className=" ">
+                    <span className="text-sm text-yellow-500">★</span> <span className="text-xs font-semi-bold">{technology.rating}</span>
+                </div>
+
             </div>
 
             <div className="mt-4 flex items-center justify-between">
 
-                <span className="text-sm text-yellow-500">
+                {/* <span className="text-sm text-yellow-500">
                     ★ {technology.rating}
-                </span>
+                </span> */}
 
                 <button
                     onClick={() => handleAddToStack(technology)}
                     disabled={isAdded}
-                    className={`rounded-md px-4 py-2 text-sm text-white ${isAdded
+                    className={`w-full rounded-md px-4 py-2 text-sm text-white ${isAdded
                             ? "cursor-not-allowed bg-gray-400"
-                            : "bg-pink-600"
+                            : "brand-gradient cursor-pointer transition"
                         }`}
                 >
-                    {isAdded ? "✓ Added to Stack" : "Add to Stack"}
+                    {isAdded ? "✓ Added to Stack" : 'Add to Stack'}
                 </button>
 
             </div>
