@@ -57,16 +57,12 @@ export default function Technology({
 
             <div className="mt-4 flex items-center justify-between">
 
-                {/* <span className="text-sm text-yellow-500">
-                    ★ {technology.rating}
-                </span> */}
-
                 <button
                     onClick={() => handleAddToStack(technology)}
                     disabled={isAdded}
                     className={`w-full rounded-md px-4 py-2 text-sm text-white ${isAdded
-                            ? "cursor-not-allowed bg-gray-400"
-                            : "brand-gradient cursor-pointer transition"
+                        ? "cursor-not-allowed bg-gray-400"
+                        : "brand-gradient cursor-pointer transition"
                         }`}
                 >
                     {isAdded ? "✓ Added to Stack" : 'Add to Stack'}
