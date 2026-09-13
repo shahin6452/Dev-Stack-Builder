@@ -51,8 +51,9 @@ Conditional rendering means showing different content based on a condition. In t
     <div>
         {Selected technologies}
     </div>
-)}```
+)}
+```
 
 ## 7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
 
-Conditional rendering means showing different content based on a condition. In this project, I used it in the `YourStack` component to show an empty message when no technology is selected.
+Data is passed from a parent component to a child component using props. A child can send something back to the parent by calling a function that was passed as a prop from the parent.
